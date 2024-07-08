@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Generator</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ASCII Art Generator</h1>
+        <p>Enter your text and select a banner style to generate ASCII art.</p>
+        <form action="/ascii-art" method="POST">
+            <label for="text">Text:</label>
+            <textarea class="text" name="text" placeholder="Enter text here" maxlength="1000" required></textarea>
+            <label for="banner">Banner:</label>
+            <select id="banner" name="banner">
+                <option value="standard">Standard</option>
+                <option value="shadow">Shadow</option>
+                <option value="thinkertoy">Thinkertoy</option>
+            </select>
+            <button class="button" type="submit">Generate</button>
+        </form>
+    </div>
+</body>
+</html>
